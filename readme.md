@@ -5,7 +5,7 @@ A function to help when debugging SQL queries made within PHP .
 
 **Example Usage:**
 
-    ```// Create a database connection for PHP to use
+    // Create a database connection for PHP to use
     $link = mysqli_connect($DBHost, $DBUser, $DBPass);
 
     // Check that the connection is active
@@ -19,11 +19,11 @@ A function to help when debugging SQL queries made within PHP .
     // Set database that is in use
     if (!mysqli_select_db($link, $DBName)) {
       dieSql($link);
-    }```
+    }
 
 **Another example:**
 
-    ```// Build a query
+    // Build a query
     $query = 'SELECT `name` ';
     $query .= 'FROM `people` ';
     // And run the query
@@ -32,7 +32,7 @@ A function to help when debugging SQL queries made within PHP .
     if (!$stmt->execute()) { dieSql($link); }
     if (!$stmt->bind_result($name)) { dieSql($link); }
     $stmt->fetch();
-    $stmt->close();```
+    $stmt->close();
 
 **Debug output:**
 
