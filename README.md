@@ -46,4 +46,7 @@ A function to help when debugging SQL queries made within PHP .
 
 **MySQL Error Information:** Unknown column 'name' in 'field list'
 
-License: MIT
+
+**License:**
+
+MIT
